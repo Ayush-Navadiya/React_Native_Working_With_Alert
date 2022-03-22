@@ -41,7 +41,7 @@ React Native working with alert and linking example
 
 ---
 ## Output
-![Output](https://github.com/Ayush-Navadiya/React_Native_Working_With_View/blob/master/Screenshots/Output.jpg)
+![Output](https://github.com/Ayush-Navadiya/React_Native_Working_With_Alert/blob/master/output/output.gif)
 
 
 
