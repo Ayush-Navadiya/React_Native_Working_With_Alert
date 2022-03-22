@@ -1,11 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { View, StyleSheet, Button, Alert, Linking } from "react-native";
 
-export default function App() {
+const App = () => {
+
+  const contributeAlert = () =>
+    Alert.alert(
+      "Contribute",
+      "Contriute with a coffee",
+      [
+        {
+          text: "Ask me later",
+          onPress: () => console.log("Ask me later pressed")
+        },
+        {
+          text: "Cancel",
+          onPress: () => console.log("Cancel Pressed"),
+          style: "cancel"
+        },
+        {
+           text: "OK",
+          onPress: () => Linking.openURL('https://www.buymeacoffee.com/ayushnavadiya')
+        }
+      ]
+    );
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Button title={"Contribute"} onPress={contributeAlert} />
     </View>
   );
 }
@@ -13,8 +34,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    justifyContent: "space-around",
+    alignItems: "center"
+  }
 });
+
+export default App;
