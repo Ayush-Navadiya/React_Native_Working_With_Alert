@@ -41,8 +41,8 @@ React Native working with alert and linking example
 
 ---
 ## Output
-![Output](https://github.com/Ayush-Navadiya/React_Native_Working_With_Alert/blob/master/output/output.gif)
 
+<img src="https://github.com/Ayush-Navadiya/React_Native_Working_With_Alert/blob/master/output/output.gif" width=250>
 
 
 # Getting started from scratch
@@ -84,7 +84,7 @@ Note: When You Run the 'expo init' command it will ask you to choose template go
 8. You will see the output on the targeted device
 9. To see the output on screen. Change the app.js code with the code given bellow
 
-```
+```javascript
 import React from "react";
 import { View, StyleSheet, Button, Alert, Linking } from "react-native";
 
